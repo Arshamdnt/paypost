@@ -1,11 +1,13 @@
-var users = [
-	{id : 1 , name : "arsham" , password : 000000023},
-	{id : 2 , name : "amin" , password : 1234},
-	{id : 3 , name : "sheyda" , password : 5678},
-	{id : 4 , name : "maryam" , password : 13831383},
-]
-var forgotpass = prompt("enter your username")
-var result = users.find(function(user){
-	return user.name === forgotpass
-})
-console.log(result)
+var userBirthDate = prompt('Enter Your Birth Date, Please: ', 1370)
+
+// alert("Birth Date: " + userBirthDate)
+
+// ali => 1384 | 1400 => ? | 1400 - 1384 = ?
+
+var userAge = 1400 - userBirthDate
+
+if (isNaN(userAge)) {
+	alert("تاریخ تولد وارد شده معتبر نمی باشد")
+} else {
+	alert("Your Age Is: " + userAge)
+}
