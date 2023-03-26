@@ -1,13 +1,12 @@
-var userBirthDate = prompt('Enter Your Birth Date, Please: ', 1370)
+var minutes = prompt("Enter your time (minute): ", 0) // 60 => 1H
 
-// alert("Birth Date: " + userBirthDate)
 
-// ali => 1384 | 1400 => ? | 1400 - 1384 = ?
+// 1h = 60m | 120 => 2H | 180 => 3H
 
-var userAge = 1400 - userBirthDate
+var minutesToHours = minutes / 60
 
-if (isNaN(userAge)) {
-	alert("تاریخ تولد وارد شده معتبر نمی باشد")
+if (isNaN(minutesToHours)) {
+	alert("عدد وارد شده معتبر نمی باشد")
 } else {
-	alert("Your Age Is: " + userAge)
+	alert(minutesToHours + " Hours")
 }
